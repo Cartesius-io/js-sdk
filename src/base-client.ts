@@ -1,5 +1,4 @@
 import CartesiusConfig, { CartesiusVersionType } from './config.model';
-import { URL } from 'url';
 import axios from 'axios';
 import ApiResponse from './api/api-response.model';
 
@@ -13,9 +12,9 @@ export default abstract class BaseClient {
   constructor(config: CartesiusConfig) {
     this.apiKey = config.apiKey;
 
-    const baseUrl = new URL(config.apiUrl || DEFAULT_BASE_URL);
-    const version = config.version || DEFAULT_VERSION;
-    this.baseApiUrl = `${baseUrl.toString()}/${version}`;
+    this.baseApiUrl = `${config.apiUrl || DEFAULT_BASE_URL}${
+      config.version || DEFAULT_VERSION
+    }`;
   }
 
   protected get<T = unknown>(

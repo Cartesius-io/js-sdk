@@ -4,6 +4,6 @@ export default interface CartesiusConfig {
 
   version?: CartesiusVersionType;
 
-  // For enterprise users with their own instance
+  // For enterprise users with their own instance. Trailing slash should be included!
   apiUrl?: string;
 }
