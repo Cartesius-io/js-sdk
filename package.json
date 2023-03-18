@@ -29,10 +29,10 @@
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
   "exports": {
-    "default": "./dist/index.cjs",
-    "require": "./dist/index.cjs",
+    "default": "./dist/index.js",
+    "require": "./dist/index.js",
     "import": "./dist/index.mjs",
-    "node": "./dist/index.cjs"
+    "node": "./dist/index.js"
   },
   "scripts": {
     "test": "jest",
