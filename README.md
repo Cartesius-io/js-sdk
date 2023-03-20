@@ -86,6 +86,6 @@ Result would look like this (`CartesiusApiResponse<CartesiusGeoFeature[]>`). For
 The package is **non-throwing**, every error will be represented as `CartesiusApiResponse`. Success is being indicated with the `status` property and the HTTP Status code `code`.
 If there has been an error with the request on the client side, the response will have the code -1. Check the messages for a detailed error descriptions.
 
-# Documentation
+## Documentation
 
 The complete documentation with examples for all features can be found [here](https://docs.cartesius.io/).
