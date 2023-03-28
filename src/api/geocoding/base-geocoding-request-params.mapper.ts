@@ -1,4 +1,5 @@
 import BaseGeocodingRequest from './base-geocoding-request.model';
+import baseApiRequestToQueryParams from '../base-request-params.mapper';
 
 export default function baseGeocodingRequestToQueryParams(
   req: BaseGeocodingRequest,
@@ -34,5 +35,5 @@ export default function baseGeocodingRequestToQueryParams(
     queryParams['languages'] = req.languages.join(',');
   }
 
-  return queryParams;
+  return { ...queryParams, ...baseApiRequestToQueryParams(req) };
 }
