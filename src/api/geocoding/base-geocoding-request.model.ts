@@ -1,8 +1,10 @@
+import BaseApiRequest from '../base-api-request.model';
+
 interface Category {
   type: string;
   specification?: string;
 }
-export default interface BaseGeocodingRequest {
+export default interface BaseGeocodingRequest extends BaseApiRequest {
   // Amount of features to return
   size?: number;
   // Fields to return
