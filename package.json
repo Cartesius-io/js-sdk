@@ -26,14 +26,14 @@
     "LICENSE",
     "README.md"
   ],
-  "types": "dist/index.d.ts",
-  "main": "dist/index.mjs",
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "exports": {
-    "default": "./dist/index.js",
-    "require": "./dist/index.js",
     "import": "./dist/index.mjs",
-    "node": "./dist/index.js"
+    "require": "./dist/index.js",
+    "node": "./dist/index.js",
+    "default": "./dist/index.js"
   },
   "scripts": {
     "test": "jest",
