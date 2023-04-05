@@ -9,11 +9,16 @@ export default interface BaseGeocodingRequest extends BaseApiRequest {
   size?: number;
   // Fields to return
   fields?: (
-    | 'shape'
-    | 'information'
-    | 'w3w'
-    | 'timeAtLocation'
+    | 'address'
+    | 'adminHierarchy'
+    | 'category'
     | 'displayValue'
+    | 'information'
+    | 'name'
+    | 'references'
+    | 'shape'
+    | 'timeAtLocation'
+    | 'w3w'
   )[];
   // Filter on categories
   categories?: Category[] | Category;
