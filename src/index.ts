@@ -31,7 +31,6 @@ interface CartesiusClient extends Autocomplete, Forward, Reverse {}
 
 applyMixins(CartesiusClient, [Autocomplete, Forward, Reverse]);
 
-export default CartesiusClient;
 export {
   CartesiusConfig,
   CartesiusClient,
