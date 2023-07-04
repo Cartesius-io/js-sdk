@@ -296,6 +296,6 @@ export default interface CartesiusGeoFeature {
 
   geometry: GeoJSONGeometry;
 
-  bbox?: number[];
+  bbox?: [number, number, number, number];
   properties: Properties;
 }
