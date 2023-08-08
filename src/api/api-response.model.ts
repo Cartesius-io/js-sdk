@@ -5,5 +5,5 @@ export default interface ApiResponse<T> {
   messages?: string[];
   data?: T;
   // Unique request identifier
-  traceId: string;
+  traceId?: string;
 }
