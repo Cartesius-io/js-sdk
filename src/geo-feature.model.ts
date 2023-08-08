@@ -1,5 +1,6 @@
 import { GeoJSONGeometry, GeoJSONPoint } from './geojson-geometry.model';
 
+export type CategoryMultiLang = Category & Record<string, string>;
 interface Category {
   type: string;
   specification?: string;
@@ -270,7 +271,7 @@ interface References {
 }
 
 interface Properties {
-  category?: Category;
+  category?: CategoryMultiLang;
 
   centroid: Centroid;
 
