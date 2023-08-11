@@ -1,9 +1,10 @@
-import Autocomplete from './api/geocoding/forward/autocomplete.endpoint';
 import BaseClient from './base-client';
 import CartesiusConfig from './config.model';
 import CartesiusGeoFeature from './geo-feature.model';
+import Autocomplete from './api/geocoding/forward/autocomplete.endpoint';
 import Forward from './api/geocoding/forward/forward.endpoint';
 import Reverse from './api/geocoding/reverse/reverse.endpoint';
+import Features from './api/geocoding/features/features.endpoint';
 import { default as CartesiusForwardRequest } from 'api/geocoding/forward/forward-request.model';
 import { default as CartesiusApiResponse } from 'api/api-response.model';
 
@@ -27,9 +28,9 @@ function applyMixins(derivedCtor: any, baseCtors: any[]) {
 
 class CartesiusClient extends BaseClient {}
 
-interface CartesiusClient extends Autocomplete, Forward, Reverse {}
+interface CartesiusClient extends Autocomplete, Forward, Reverse, Features {}
 
-applyMixins(CartesiusClient, [Autocomplete, Forward, Reverse]);
+applyMixins(CartesiusClient, [Autocomplete, Forward, Reverse, Features]);
 
 export {
   CartesiusConfig,
