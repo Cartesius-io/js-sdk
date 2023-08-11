@@ -8,7 +8,7 @@ export default class Features extends BaseClient {
   getFeatureById(
     id: string,
     requestData?: FeaturesRequest,
-  ): Promise<ApiResponse<CartesiusGeoFeature[]>> {
+  ): Promise<ApiResponse<CartesiusGeoFeature>> {
     return this.get(`/features/${id}`, {
       ...(requestData ? baseGeocodingRequestToQueryParams(requestData) : {}),
     });
