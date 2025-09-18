@@ -60,7 +60,7 @@
     "lint-staged": "16.1.6",
     "prettier": "3.6.2",
     "semantic-release": "^24.0.0",
-    "ts-jest": "29.4.2",
+    "ts-jest": "29.4.3",
     "tsup": "^8.0.0",
     "typescript": "5.9.2"
   },
