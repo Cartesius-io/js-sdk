@@ -46,8 +46,8 @@
   "author": "Cartesius <info@cartesius.io>",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "21.2.2",
-    "@commitlint/config-conventional": "21.2.2",
+    "@commitlint/cli": "21.2.3",
+    "@commitlint/config-conventional": "21.2.3",
     "@types/jest": "30.0.0",
     "@types/node": "22.20.2",
     "@typescript-eslint/eslint-plugin": "8.70.0",
